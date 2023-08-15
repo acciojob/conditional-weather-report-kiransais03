@@ -17,7 +17,7 @@ const App = () => {
           {
             setInput({temperature: e.target.value, conditions: "Cold"})
           }}}/>
-       {input && <p className={`${input.conditions}`}>The temperature is {input.temperature} degrees.Weather Condition is {input.conditions}</p>}
+       {input.temperature && <div><p className={`${input.conditions}`}>Temperature: {input.temperature}</p></div>}
     </div>
   )
 }
